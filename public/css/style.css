@@ -6,22 +6,26 @@ body {
   height: 100%;
   background-image: url("../img/background.jpg");
   background-size: cover;
+   padding-top: 1px;  margin-top: -1px; 
+
+
 }
+
 
 .main {
   width: 90%;
-  height: 100%;
-  margin-top: 60px;
-  margin-bottom: 80px;
+  height: 95%;
+  margin-top: 2%;
+  margin-bottom: 10%;
   margin-left: 5%;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 20px;
 }
 
 #logo {
-  width: 100px;
+  width: 10%;
   border-radius: 70%;
-  margin-top: -35px;
+  margin-top: -2%;
   animation: rotate_img 3s linear infinite;
 }
 
@@ -41,6 +45,15 @@ body {
 .tutorial {
   padding-top: 5px;
   padding-bottom: 20px;
+}
+.head{
+height: 20%;
+}
+.level-box{
+height: 40%;
+}
+.menu{
+height: 15%;
 }
 
 #nameBox {
@@ -78,7 +91,7 @@ td {
   border: 0;
   border-radius: 10px;
   outline: 0;
-  width: 300px;
+  width: 30%;
   margin: 5px;
   padding: 15px 50px;
   font-size: 17px;
@@ -227,22 +240,24 @@ td {
 /* Level Card */
 
 .level-row {
+  display: flex;
+  height: 100%;
   padding: 0 100px;
 }
 
 .level-col {
-  float: left;
   width: 30%;
   padding: 1.5%;
 }
 
 .level-card {
+  height: 100%;
   position: relative;
   cursor: pointer;
 }
 
 .level-card .face {
-  height: 200px;
+  height: 50%;
   transition: 0.5s;
 }
 
@@ -251,7 +266,7 @@ td {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(100px);
+  transform: translateY(50%);
   z-index: 1;
   background: #333;
 }
@@ -262,7 +277,7 @@ td {
 }
 
 .level-card .face.face1 .card-content {
-  opacity: 0.2;
+  opacity: 0.3;
   transition: 0.5s;
 }
 
@@ -275,7 +290,7 @@ td {
 }
 
 .level-card .face.face1 .card-content {
-  margin: 10px 0 0;
+  /* margin: 10px 0 0; */
   padding: 0;
   color: #fff;
   text-align: center;
@@ -288,7 +303,7 @@ td {
   align-items: center;
   box-sizing: border-box;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-  transform: translateY(-100px);
+  transform: translateY(-50%);
 }
 
 .level-card:hover .face.face2 {
@@ -299,3 +314,40 @@ td {
   background: #333;
   color: #fff;
 }
+.order1 .face1 .card-content{
+  width: 100%;
+  background-image: url("../img/mazeHard.png");
+  background-size: cover;
+}
+.order2 .face1 .card-content{
+  width: 100%;
+  background-image: url("../img/mazeNormal.png");
+  background-size: cover;
+}
+.order3 .face1 .card-content{
+  width: 100%;
+  background-image: url("../img/mazeEasy.png");
+  background-size: cover;
+}
+#webcam {
+  width: 25%;
+  height: 100%;
+ 
+}
+.main-content{
+  width: 100%;
+  height: 90%;
+  display: flex;
+}
+.card-img-top{
+  width: 100%;
+}
+
+
+/* .card-content img {
+
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+} */
+
