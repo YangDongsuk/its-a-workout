@@ -91,17 +91,17 @@ input[type=radio] {
     background-color: rgba(222, 222, 222, 0.7);
     border: 2px solid rgba(61, 61, 61, 0.8);
     border-radius: 8px;
-    width: 60%;
-    margin: 20px 20%;
-    padding: 5px 0;
+    width: 70%;
+    margin: 5vw auto;
+    padding: 2vw 0;
 }
 
 .upper-part {
     position: relative;
     display: flex;
     align-items: center;
-    margin-bottom: 12px;
-    height: 36px;
+    margin-bottom: 1vh;
+    height: 5vh;
     overflow: hidden;
 }
 
@@ -110,15 +110,16 @@ input[type=radio] {
 }
 
 .song-info {
-    width: calc(100% - 32px);
+    /* width: calc(100% - 32px); */
     display: block;
 }
 
 .song-info .title {
     color: #403d40;
-    font-size: 1.5rem;
+    font-size: 2vh;
     font-weight: bold;
-    line-height: 25px;
+    /* line-height: 25px; */
+    margin: 2vh;
 }
 
 .sub-line {
@@ -145,27 +146,27 @@ input[type=radio] {
     width: 100%;
     position: absolute;
     top: 0;
-    left: 30px;
+    /* left: 30px; */
     transition: transform .4s ease-in;
 }
 
 #item-1:checked~.player #test {
-    transform: translateY(10px);
+    transform: translateY(0);
 }
 
 #item-2:checked~.player #test {
-    transform: translateY(-17px);
+    transform: translateY(-4vw);
 }
 
 #item-3:checked~.player #test {
-    transform: translateY(-43px);
+    transform: translateY(-8vw);
 }
 
 #item-4:checked~.player #test {
-    transform: translateY(-66px);
+    transform: translateY(-12vw);
 }
 #item-5:checked~.player #test {
-    transform: translateY(-90px);
+    transform: translateY(-16vw);
 }
 
 
